@@ -1,3 +1,6 @@
+<script setup>
+import { RouterLink } from "vue-router";
+</script>
 <template>
   <div class="header py-4 border-b-2">
     <div class="container flex justify-between items-center text-white">
@@ -8,8 +11,12 @@
         LEARN
       </div>
       <ul class="flex">
-        <li class="cursor-pointer hover:text-[#41B883] duration-300">Home</li>
-        <li class="ml-4 cursor-pointer hover:text-[#41B883] duration-300">About</li>
+        <li class="cursor-pointer hover:text-[#41B883] duration-300">
+          <RouterLink to="/">Landing</RouterLink>
+        </li>
+        <li class="ml-4 cursor-pointer hover:text-[#41B883] duration-300">
+          <RouterLink to="/about">about</RouterLink>
+        </li>
       </ul>
     </div>
   </div>

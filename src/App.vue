@@ -1,11 +1,11 @@
 <script setup>
+import { RouterView } from "vue-router";
 import Header from "./components/Header.vue";
-import Landing from "./components/Landing.vue"
 </script>
 
 <template>
   <Header />
-  <Landing />
+  <RouterView />
 </template>
 
 <style scoped></style>
